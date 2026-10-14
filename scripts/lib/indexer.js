@@ -7,7 +7,7 @@ const { discover, fingerprint, ancestors } = require('./discover');
 const { tokens, rawWords, quotedPhrases, counts, stem } = require('./text');
 const store = require('./store');
 
-const INDEX_VERSION = 8;
+const INDEX_VERSION = 10;
 const NAME_WEIGHT = 3;   // a word in the skill's name says more than one in its description
 const PLUGIN_WEIGHT = 1; // plugin name ("gsap-skills", "supabase") is a strong domain hint
 

@@ -33,7 +33,8 @@ if (fs.existsSync(settingsFile)) {
     console.error(`Could not parse ${settingsFile}: ${e.message}. Fix it first; nothing was changed.`);
     process.exit(1);
   }
-  fs.writeFileSync(settingsFile + '.bak-skills-conflict', raw);
+  // settings.json can hold tokens in "env"; keep the backup readable by the owner only
+  fs.writeFileSync(settingsFile + '.bak-skills-conflict', raw, { mode: 0o600 });
 }
 settings.hooks = settings.hooks || {};
 for (const event of Object.keys(wanted)) {
