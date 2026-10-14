@@ -55,8 +55,7 @@ if (uninstall) {
 } else {
   fs.mkdirSync(skillDir, { recursive: true });
   const src = fs.readFileSync(path.join(root, 'skills', 'skill-router', 'SKILL.md'), 'utf8')
-    .replace(/<skill base dir>\/\.\.\/\.\.\/scripts\/cli\.js/g, path.join(root, 'scripts', 'cli.js').replace(/\\/g, '/'))
-    .replace(/Its path is `\.\.\/\.\.\/scripts\/cli\.js`, relative to this skill's base\s+directory\./, `Its path is \`${path.join(root, 'scripts', 'cli.js').replace(/\\/g, '/')}\`.`);
+    .split('<path>/scripts/cli.js').join(path.join(root, 'scripts', 'cli.js').replace(/\\/g, '/'));
   fs.writeFileSync(path.join(skillDir, 'SKILL.md'), src);
   fs.writeFileSync(path.join(skillDir, '.skills-conflict'), root);
 }

@@ -319,7 +319,9 @@ function formatContext(res, index) {
       const role = i === 0 ? 'USE FIRST' : 'ALSO USE when the task reaches it';
       lines.push(`${i + 1}. ${safeId(r.doc.id)} [${r.doc.kind}, ${role}] -> ${invocation(r.doc)}. ${shortDesc(r.doc)}`);
     });
-    lines.push(`Load #1 before doing the work.`);
+    const first = res.picks[0].doc;
+    lines.push(`Required first step: call ${invocation(first)} before any other tool call or answer, even if the task looks simple; ` +
+      `its instructions set the quality bar for this request. Skip it only if it plainly does not match what the user asked.`);
   }
   const close = res.skipped.filter((s) => s.close);
   const banned = res.skipped.filter((s) => !s.close);

@@ -1,6 +1,6 @@
 {
   "name": "skills-conflict",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatic skill router for Claude Code: picks the best installed skills for every prompt and blocks overlapping ones.",
   "license": "MIT",
   "private": true,

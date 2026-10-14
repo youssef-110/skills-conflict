@@ -1,6 +1,7 @@
 ---
 name: skill-router
 description: Manages the automatic skill router that picks the best installed skills for every request and blocks overlapping ones. Use when the user asks which skill or plugin to use for something, why a skill was or was not picked, which installed skills overlap, duplicate or conflict, says they have too many skills, wants to always prefer one skill over another, wants to stop a skill from being suggested, or wants to turn the router on or off. Also use when a <skill-router> note looks wrong.
+allowed-tools: Bash(node *skills-conflict*scripts/cli.js*), Bash(node *skills-conflict*scripts\cli.js*)
 ---
 
 # Skill router
@@ -10,11 +11,12 @@ and subagent, scores them against the request, and adds a `<skill-router>` note 
 and the overlapping ones to skip. Nothing has to be invoked for that to work. This skill is for
 inspecting and steering it.
 
-All commands go through one script. Its path is `../../scripts/cli.js`, relative to this skill's base
-directory. Run it with node:
+All commands go through one script. The exact command is in this session's "skill-router is active"
+startup note (`node "<path>/scripts/cli.js" <command>`). If that note is missing, the script is
+`../../scripts/cli.js` relative to this skill's base directory. Do not search the disk for it.
 
 ```bash
-node "<skill base dir>/../../scripts/cli.js" <command>
+node "<path>/scripts/cli.js" <command>
 ```
 
 ## What the user wants, and the command for it
