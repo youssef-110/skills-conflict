@@ -1,0 +1,39 @@
+{
+  "description": "skill-router: index installed skills at session start, route every prompt, learn from skill usage",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v node >/dev/null 2>&1 || exit 0; R=$(printf %s \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$R/scripts/hooks/session-start.js\"",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v node >/dev/null 2>&1 || exit 0; R=$(printf %s \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$R/scripts/hooks/prompt.js\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill|Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v node >/dev/null 2>&1 || exit 0; R=$(printf %s \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$R/scripts/hooks/skill-used.js\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

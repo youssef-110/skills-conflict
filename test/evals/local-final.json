@@ -1,0 +1,24 @@
+{
+  "_comment": "Final blind set: written after tuning stopped and run once. Same format as local-routing.json.",
+  "cases": [
+    { "prompt": "our api returns 500 on POST /orders since this morning", "accept": ["superpowers:systematic-debugging", "engineering:debug", "engineering:incident-response"] },
+    { "prompt": "write a blog post outline about remote work burnout targeting HR managers", "accept": ["marketing:content-creation", "marketing:draft-content", "searchfit-seo:create-content", "searchfit-seo:content-brief", "small-business:content-strategy"] },
+    { "prompt": "analyze this sales data csv and tell me what's driving the churn", "accept": ["data:analyze", "data:explore-data", "data:statistical-analysis"] },
+    { "prompt": "make a short tiktok style ad for my skincare product", "accept": ["arcads:ads", "arcads:animated-ad", "arcads:media-router", "arcads:cinematic-ads", "higgsfield-generate"] },
+    { "prompt": "draft an offer letter for a product designer at 120k", "accept": ["human-resources:draft-offer"] },
+    { "prompt": "create a gif for slack of a dancing cat", "accept": ["anthropic-skills:slack-gif-creator"] },
+    { "prompt": "add dark mode with css variables to the site", "accept": ["hzblj-skills:tailwind", "impeccable:impeccable", "taste-skill", "agentic-council:design-system-architecture", "agentic-council:artisan-design-system-architecture", "design:design-system"] },
+    { "prompt": "set up a cron job that checks my deploy every hour", "accept": ["schedule", "loop", "anthropic-skills:schedule"] },
+    { "prompt": "write a runbook for restarting the payment service", "accept": ["operations:runbook", "engineering:incident-response"] },
+    { "prompt": "write a threat model for our new file upload feature", "accept": ["agentic-council:threat-model", "agentic-council:skeptic-threat-model"] },
+    { "prompt": "build an animated product showreel video from code", "accept": ["motion-reel:motion-reel", "remotion-create", "remotion-best-practices", "animation-studio:animation-studio"] },
+    { "prompt": "prep me for my call tomorrow with Acme corp", "accept": ["sales:call-prep", "legal:meeting-briefing"] },
+    { "prompt": "make this react component list render faster, it re-renders on every keystroke", "accept": ["hzblj-skills:performance", "audit-suite:vercel-react-best-practices", "audit-suite:audit-as-perf-eng", "agentic-council:performance-audit", "agentic-council:tuner-performance-audit"] },
+    { "prompt": "design a database schema for a multi tenant saas", "accept": ["agentic-council:schema-design", "agentic-council:architect-schema-design", "supabase:supabase-postgres-best-practices"] },
+    { "prompt": "create a brand kit with logo, colors and fonts for my bakery", "accept": ["brandkit", "higgsfield-brandkit", "small-business:brand-style"] },
+    { "prompt": "great, let's do that", "none": true },
+    { "prompt": "why did you change that line", "none": true },
+    { "prompt": "show me the git log", "none": true },
+    { "prompt": "undo the last change", "none": true }
+  ]
+}

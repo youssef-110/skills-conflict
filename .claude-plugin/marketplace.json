@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "skills-conflict",
+  "description": "Automatic skill routing and overlap resolution for Claude Code.",
+  "owner": {
+    "name": "youssef-110",
+    "url": "https://github.com/youssef-110"
+  },
+  "plugins": [
+    {
+      "name": "skills-conflict",
+      "description": "Picks the best installed skills for every prompt automatically and stops overlapping skills from being loaded together.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  { "name": "code-review", "kind": "skill", "description": "Review the current diff, a PR number, branch or path for correctness bugs, with optional fixes. Use for 'review my changes', 'review this PR', 'find bugs in my diff'." },
+  { "name": "simplify", "kind": "skill", "description": "Review changed code for reuse, simplification, efficiency and cleanup, then apply the fixes. Quality only, not bug hunting." },
+  { "name": "security-review", "kind": "skill", "description": "Security review of the pending changes on the current branch: vulnerabilities, injection, auth, secrets." },
+  { "name": "init", "kind": "skill", "description": "Initialize a CLAUDE.md file with codebase documentation for a new repository." },
+  { "name": "loop", "kind": "skill", "description": "Run a prompt or slash command on a recurring interval, poll for status, repeat a task every N minutes." },
+  { "name": "schedule", "kind": "skill", "description": "Create, update, list or run scheduled cloud agents (routines) on a cron schedule; one-time scheduled runs and reminders." },
+  { "name": "claude-api", "kind": "skill", "description": "Reference for the Claude API and Anthropic SDK: model ids, pricing, streaming, tool use, prompt caching, agents, MCP, token counting." },
+  { "name": "update-config", "kind": "skill", "description": "Configure the Claude Code harness via settings.json: hooks, permissions, allow commands, environment variables, automated behaviors." },
+  { "name": "keybindings-help", "kind": "skill", "description": "Customize keyboard shortcuts, rebind keys, add chord bindings in ~/.claude/keybindings.json." },
+  { "name": "fewer-permission-prompts", "kind": "skill", "description": "Scan transcripts for common read-only tool calls and add an allowlist to reduce permission prompts." },
+  { "name": "run", "kind": "skill", "description": "Launch and drive this project's app to see a change working: run, start or screenshot the app." }
+]

@@ -1,0 +1,345 @@
+{
+  "_comment": "Routing evals against a real, heavily loaded install (700 skills). 'accept' lists every id that is a correct PRIMARY pick; 'none' cases must not inject anything. Ids that are not installed on the machine running the eval are dropped; a case with no installed accept ids is skipped.",
+  "cases": [
+    {
+      "prompt": "my login form throws a TypeError when I submit, can you debug it",
+      "accept": [
+        "superpowers:systematic-debugging",
+        "engineering:debug"
+      ]
+    },
+    {
+      "prompt": "tests in src/cart.test.ts started failing after I bumped react, figure out why",
+      "accept": [
+        "superpowers:systematic-debugging",
+        "engineering:debug"
+      ]
+    },
+    {
+      "prompt": "review my pull request before I merge it",
+      "accept": [
+        "code-review",
+        "code-review:code-review",
+        "pr-review-toolkit:review-pr",
+        "engineering:code-review",
+        "pr-review-toolkit:code-reviewer"
+      ]
+    },
+    {
+      "prompt": "can you check my diff for bugs",
+      "accept": [
+        "code-review",
+        "code-review:code-review",
+        "engineering:code-review",
+        "pr-review-toolkit:code-reviewer",
+        "pr-review-toolkit:review-pr"
+      ]
+    },
+    {
+      "prompt": "deploy this nextjs app to vercel and give me the link",
+      "accept": [
+        "deploy-to-vercel"
+      ]
+    },
+    {
+      "prompt": "write a sql query for monthly revenue by region from the orders table",
+      "accept": [
+        "data:write-query",
+        "data:sql-queries"
+      ]
+    },
+    {
+      "prompt": "make an instagram carousel about productivity tips for freelancers",
+      "accept": [
+        "instagram-agent:ig-carousel"
+      ]
+    },
+    {
+      "prompt": "write a caption for my instagram post about our new coffee blend",
+      "accept": [
+        "instagram-agent:ig-caption"
+      ]
+    },
+    {
+      "prompt": "create a remotion video with animated captions from my podcast audio",
+      "accept": [
+        "remotion-captions",
+        "remotion-create",
+        "remotion-best-practices"
+      ]
+    },
+    {
+      "prompt": "build me a landing page for my coffee shop that doesn't look AI generated",
+      "accept": [
+        "taste-skill",
+        "frontend-design:frontend-design",
+        "impeccable:impeccable",
+        "web-design-suite:build",
+        "web-design-suite:web-design-suite",
+        "soft-skill",
+        "gpt-tasteskill",
+        "minimalist-skill"
+      ]
+    },
+    {
+      "prompt": "add a scroll triggered pinned section with gsap to the hero",
+      "accept": [
+        "gsap-skills:gsap-scrolltrigger",
+        "hzblj-skills:gsap-scroll-trigger"
+      ]
+    },
+    {
+      "prompt": "the dropdown menu animation feels janky, make it smoother",
+      "accept": [
+        "improve-animations",
+        "emil-design-eng",
+        "review-animations",
+        "hzblj-skills:animation-specialist",
+        "animate",
+        "transitions-polish",
+        "make-interfaces-feel-better",
+        "audit-suite:web-animation-design",
+        "web-design-suite:animate"
+      ]
+    },
+    {
+      "prompt": "make a powerpoint deck summarizing our Q3 results",
+      "accept": [
+        "anthropic-skills:pptx",
+        "market-researcher:pptx-author"
+      ]
+    },
+    {
+      "prompt": "fill out this pdf form with my details",
+      "accept": [
+        "pdf-viewer:fill-form",
+        "anthropic-skills:pdf"
+      ]
+    },
+    {
+      "prompt": "turn this csv into an excel spreadsheet with a pivot table and formulas",
+      "accept": [
+        "anthropic-skills:xlsx"
+      ]
+    },
+    {
+      "prompt": "brainstorm ideas for a habit tracking app before we build anything",
+      "accept": [
+        "superpowers:brainstorming",
+        "agentic-council:brainstorm"
+      ]
+    },
+    {
+      "prompt": "write an implementation plan for adding stripe subscriptions",
+      "accept": [
+        "superpowers:writing-plans",
+        "claude-mem:make-plan",
+        "engineering:architecture"
+      ]
+    },
+    {
+      "prompt": "scan this repo for security vulnerabilities",
+      "accept": [
+        "find-security-vulnerabilities-in-code",
+        "security-review",
+        "claude-security:claude-security",
+        "agentic-council:threat-model"
+      ]
+    },
+    {
+      "prompt": "audit my site for seo problems, meta tags and broken links",
+      "accept": [
+        "searchfit-seo:seo-audit",
+        "searchfit-seo:seo-check",
+        "marketing:seo-audit",
+        "searchfit-seo:seo-auditor:AGENT",
+        "brightdata-plugin:seo-audit",
+        "searchfit-seo:technical-seo"
+      ]
+    },
+    {
+      "prompt": "set up a supabase table for user profiles with row level security",
+      "accept": [
+        "supabase:supabase",
+        "supabase:supabase-postgres-best-practices"
+      ]
+    },
+    {
+      "prompt": "make the app accessible, check color contrast and keyboard navigation",
+      "accept": [
+        "design:accessibility-review",
+        "audit-suite:audit-as-a11y-eng",
+        "agentic-council:a11y-audit",
+        "agentic-council:advocate-a11y-audit",
+        "a11y-debugging"
+      ]
+    },
+    {
+      "prompt": "the page takes 6 seconds to load, LCP is terrible",
+      "accept": [
+        "debug-optimize-lcp",
+        "vercel-optimize",
+        "audit-suite:audit-as-perf-eng",
+        "agentic-council:performance-audit",
+        "agentic-council:tuner-performance-audit"
+      ]
+    },
+    {
+      "prompt": "create a figma design for a settings screen",
+      "accept": [
+        "figma:figma-generate-design",
+        "figma:figma-use",
+        "figma:figma-create-new-file"
+      ]
+    },
+    {
+      "prompt": "commit these changes and open a PR",
+      "accept": [
+        "commit-commands:commit-push-pr",
+        "commit-commands:commit"
+      ]
+    },
+    {
+      "prompt": "add a PreToolUse hook that blocks rm -rf in my settings",
+      "accept": [
+        "update-config",
+        "hookify:hookify",
+        "hookify:writing-rules",
+        "hookify:writing-hookify-rules"
+      ]
+    },
+    {
+      "prompt": "draft a cold outreach email to a VP of engineering at a fintech",
+      "accept": [
+        "sales:draft-outreach",
+        "small-business:outreach-composer",
+        "agentic-council:SDR",
+        "marketing:email-sequence"
+      ]
+    },
+    {
+      "prompt": "review this NDA and flag risky clauses",
+      "accept": [
+        "legal:triage-nda",
+        "legal:review-contract",
+        "small-business:contract-review"
+      ]
+    },
+    {
+      "prompt": "build a react native swipeable card stack with reanimated",
+      "accept": [
+        "react-native-skills",
+        "hzblj-skills:reanimated-gestures",
+        "hzblj-skills:mobile-developer",
+        "mobile-native",
+        "animate-expo"
+      ]
+    },
+    {
+      "prompt": "write a new claude skill that formats my changelog",
+      "accept": [
+        "skill-creator",
+        "anthropic-skills:skill-creator",
+        "superpowers:writing-skills"
+      ]
+    },
+    {
+      "prompt": "generate a youtube thumbnail for my video about budgeting",
+      "accept": [
+        "higgsfield-youtube-thumbnail"
+      ]
+    },
+    {
+      "prompt": "use taste-skill to restyle the pricing page",
+      "accept": [
+        "taste-skill"
+      ]
+    },
+    {
+      "prompt": "clean up this messy 300 line function without changing behavior",
+      "accept": [
+        "hzblj-skills:refactor",
+        "hzblj-skills:code-refactorer",
+        "code-simplifier:code-simplifier",
+        "simplify",
+        "caveman:safe-refactor",
+        "pr-review-toolkit:code-simplifier",
+        "hzblj-skills:functions"
+      ]
+    },
+    {
+      "prompt": "I have a memory leak in my node server, heap keeps growing",
+      "accept": [
+        "memory-leak-debugging"
+      ]
+    },
+    {
+      "prompt": "write unit tests first then implement the parser",
+      "accept": [
+        "superpowers:test-driven-development",
+        "engineering:testing-strategy",
+        "agentic-council:testing-strategy"
+      ]
+    },
+    {
+      "prompt": "make a bar chart of signups per week",
+      "accept": [
+        "data:create-viz",
+        "data:data-visualization",
+        "dataviz"
+      ]
+    },
+    {
+      "prompt": "research the competitive landscape for AI note taking apps",
+      "accept": [
+        "anthropic-skills:deep-research",
+        "market-researcher:competitive-analysis",
+        "marketing:competitive-brief",
+        "agentic-council:competitive-analysis",
+        "sales:competitive-intelligence",
+        "agentic-council:scout-competitive-analysis",
+        "brightdata-plugin:competitive-intel",
+        "market-researcher:market-researcher"
+      ]
+    },
+    {
+      "prompt": "remind me what we decided about auth in earlier sessions",
+      "accept": [
+        "claude-mem:mem-search",
+        "claude-mem:timeline-report"
+      ]
+    },
+    {
+      "prompt": "yes",
+      "none": true
+    },
+    {
+      "prompt": "ok go ahead",
+      "none": true
+    },
+    {
+      "prompt": "thanks, that worked",
+      "none": true
+    },
+    {
+      "prompt": "what time is it in tokyo",
+      "none": true
+    },
+    {
+      "prompt": "rename the variable foo to userCount in utils.js",
+      "none": true
+    },
+    {
+      "prompt": "/caveman ultra",
+      "none": true
+    },
+    {
+      "prompt": "what does this function return",
+      "none": true
+    },
+    {
+      "prompt": "how many lines are in README.md",
+      "none": true
+    }
+  ]
+}

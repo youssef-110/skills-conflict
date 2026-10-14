@@ -1,0 +1,30 @@
+{
+  "_comment": "Held-out prompts, never used for tuning. Same format as local-routing.json.",
+  "cases": [
+    { "prompt": "my python script crashes with KeyError on line 40, help", "accept": ["superpowers:systematic-debugging", "engineering:debug"] },
+    { "prompt": "the checkout page is broken on safari only", "accept": ["superpowers:systematic-debugging", "engineering:debug", "chrome-devtools", "a11y-debugging"] },
+    { "prompt": "redesign our dashboard so it looks less generic", "accept": ["redesign-skill", "web-design-suite:redesign", "impeccable:impeccable", "taste-skill", "frontend-design:frontend-design", "soft-skill"] },
+    { "prompt": "write a word document with our onboarding policy", "accept": ["anthropic-skills:docx", "human-resources:onboarding"] },
+    { "prompt": "create a slide deck for the investor pitch", "accept": ["anthropic-skills:pptx", "market-researcher:pptx-author", "figma:figma-use-slides"] },
+    { "prompt": "explain how this codebase is structured, I just joined", "accept": ["claude-mem:learn-codebase", "agentic-council:codebase-context", "agentic-council:architect-codebase-context", "feature-dev:code-explorer", "hzblj-skills:how", "graphify"] },
+    { "prompt": "set up playwright end to end tests for the signup flow", "accept": ["playwright-cli", "agentic-council:e2e-testing", "agentic-council:craftsman-e2e-testing", "checkly:playwright-best-practices-for-agents"] },
+    { "prompt": "generate product photos of my candle on a marble table", "accept": ["higgsfield-product-photoshoot", "higgsfield-generate"] },
+    { "prompt": "post a reel idea plan for next week on instagram", "accept": ["instagram-agent:ig-reel", "instagram-agent:ig-plan"] },
+    { "prompt": "reconcile the bank statement against the general ledger", "accept": ["finance:reconciliation", "agentic-council:finance-reconciliation"] },
+    { "prompt": "add page transitions between routes in my next.js app", "accept": ["react-view-transitions", "transitions-dev", "transitions-polish", "hzblj-skills:nextjs-routing"] },
+    { "prompt": "make this button feel more satisfying to click", "accept": ["make-interfaces-feel-better", "emil-design-eng", "audit-suite:make-interfaces-feel-better", "hzblj-skills:ui-interactions", "web-design-suite:animate", "animate", "impeccable:impeccable"] },
+    { "prompt": "build a 3d scene in three.js from this reference image", "accept": ["img2threejs"] },
+    { "prompt": "convert this screenshot into react code", "accept": ["image-to-code-skill", "figma:figma-design-to-code"] },
+    { "prompt": "write a job post for a senior backend engineer", "accept": ["small-business:job-post-builder", "human-resources:recruiting-pipeline"] },
+    { "prompt": "my claude usage limit keeps running out, reduce token usage", "accept": ["usage-limit-reducer", "token-optimization", "rescue-tokens", "token-efficiency-audit:token-efficiency-audit", "token-efficiency-audit:token-efficiency-expert", "caveman:caveman-optimize"] },
+    { "prompt": "scrape the product prices from this competitor's site", "accept": ["brightdata-plugin:scrape", "brightdata-plugin:price-comparison", "brightdata-plugin:scraper-builder"] },
+    { "prompt": "run a statistical significance test on these A/B results", "accept": ["data:statistical-analysis"] },
+    { "prompt": "write a CLAUDE.md for this repo", "accept": ["init", "claude-md-management:revise-claude-md", "claude-md-management:claude-md-improver"] },
+    { "prompt": "build an MCP server that wraps our internal API", "accept": ["anthropic-skills:mcp-builder"] },
+    { "prompt": "check this migration won't lock the users table in postgres", "accept": ["supabase:supabase-postgres-best-practices", "caveman:migration", "supabase:supabase"] },
+    { "prompt": "nice, now push it", "none": true },
+    { "prompt": "can you read src/index.ts", "none": true },
+    { "prompt": "sounds good, continue with step 2", "none": true },
+    { "prompt": "what's the difference between let and const", "none": true }
+  ]
+}
