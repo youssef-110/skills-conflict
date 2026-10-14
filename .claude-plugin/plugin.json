@@ -1,6 +1,6 @@
 {
   "name": "skills-conflict",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatic skill router. Before every prompt it scans every installed skill, plugin skill, slash command and subagent, picks the best ones for the task, and tells Claude which overlapping skills to skip. No command needed.",
   "author": {
     "name": "youssef-110",
